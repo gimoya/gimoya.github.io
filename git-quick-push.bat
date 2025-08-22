@@ -18,7 +18,9 @@ if errorlevel 1 (
 )
 
 echo Pushing...
-git push
+git push -u origin master
+
+pause
 
 endlocal
 
