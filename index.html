@@ -82,6 +82,44 @@
       max-width: 320px;
       text-align: center;
     }
+    .btn.btn-light {
+      background: #fff;
+      color: #111;
+      border: 1px solid #e6e6e6;
+      box-shadow: 0 2px 14px #0004;
+    }
+    .btn.btn-light:hover, .btn.btn-light:focus {
+      background: #f2f2f2;
+      color: #000;
+    }
+    /* Secondary link section under main buttons */
+    .subnav {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 1.25rem 0 0;
+      width: 100%;
+      padding: 0 12px;
+    }
+    .btn-sub {
+      background: #f5f5f5;
+      color: #111;
+      border: 1px solid #e6e6e6;
+      padding: 0.6em 1.2em;
+      font-size: 0.9rem;
+      letter-spacing: 0.1em;
+      box-shadow: 0 1px 6px #0003;
+      text-transform: none;
+      width: auto;
+      max-width: none;
+    }
+    .btn-sub:hover, .btn-sub:focus {
+      background: #111;
+      color: #fff;
+      border-color: #111;
+    }
     .btn:hover, .btn:focus {
       background: #fff;
       color: #111;
@@ -96,6 +134,9 @@
       .btn {
         width: 220px;
         max-width: none;
+      }
+      .subnav {
+        gap: 2.5rem;
       }
     }
     @media (max-width: 800px) {
@@ -148,6 +189,10 @@
     <div class="btn-group">
       <a class="btn" href="https://consulting.tiroltrailhead.com">Consulting</a>
       <a class="btn" href="https://guiding.tiroltrailhead.com">Guiding</a>
+    </div>
+    <div class="subnav">
+      <a class="btn btn-sub" href="/apps.html">Apps</a>
+      <a class="btn btn-sub" href="/webmaps.html">Webmaps</a>
     </div>
   </div>
 </body>
