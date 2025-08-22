@@ -177,6 +177,22 @@
         font-size: 1rem;
       }
     }
+
+    /* Animations */
+    @keyframes bgFade {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    /* Apply subtle fades after initial styles so they take effect */
+    .bg-video, .bg-image { opacity: 0; animation: bgFade 900ms ease-out forwards; }
+    .content { animation: fadeInUp 800ms ease-out 150ms both; }
+    @media (prefers-reduced-motion: reduce) {
+      .bg-video, .bg-image, .content { animation: none !important; }
+    }
   </style>
 </head>
 <body>
