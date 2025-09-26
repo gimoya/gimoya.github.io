@@ -3,22 +3,159 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore Tirol Trailhead's web applications including TheHunt25 treasure hunt game, OSM Trail Search, and NoEXIF Geotagging tools for outdoor enthusiasts." />
   <title>Apps · Tirol Trailhead</title>
+  <link rel="canonical" href="https://tiroltrailhead.com/apps.html" />
   <link rel="icon" href="/favicon.ico" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tiroltrailhead.com/apps.html" />
+  <meta property="og:title" content="Apps · Tirol Trailhead" />
+  <meta property="og:description" content="Explore Tirol Trailhead's web applications including TheHunt25 treasure hunt game, OSM Trail Search, and NoEXIF Geotagging tools for outdoor enthusiasts." />
+  <meta property="og:image" content="https://tiroltrailhead.com/lago_.jpg" />
+  <meta property="og:site_name" content="Tirol Trailhead" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://tiroltrailhead.com/apps.html" />
+  <meta property="twitter:title" content="Apps · Tirol Trailhead" />
+  <meta property="twitter:description" content="Explore Tirol Trailhead's web applications including TheHunt25 treasure hunt game, OSM Trail Search, and NoEXIF Geotagging tools for outdoor enthusiasts." />
+  <meta property="twitter:image" content="https://tiroltrailhead.com/lago_.jpg" />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Apps · Tirol Trailhead",
+    "description": "Explore Tirol Trailhead's web applications including TheHunt25 treasure hunt game, OSM Trail Search, and NoEXIF Geotagging tools for outdoor enthusiasts.",
+    "url": "https://tiroltrailhead.com/apps.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Tirol Trailhead",
+      "url": "https://tiroltrailhead.com"
+    },
+    "about": {
+      "@type": "Organization",
+      "name": "Tirol Trailhead"
+    }
+  }
+  </script>
+  
   <style>
-    :root { --bg:#0b0c10; --card:#15171c; --text:#e8eef2; --muted:#9aa4af; --accent:#4cc9f0; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); }
-    header { padding: 40px 20px 10px; text-align:center; }
-    header h1 { margin: 0 0 6px; font-weight:700; letter-spacing:0.5px; }
-    header p { margin: 0; color: var(--muted); }
-    .grid { display:grid; gap:16px; padding:24px; max-width:1100px; margin:0 auto; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); justify-content: center; justify-items: center; }
-    .card { display:block; background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:18px 18px 16px; text-decoration:none; color: inherit; transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease; backdrop-filter: blur(6px); text-align:center; width:100%; max-width:420px; }
-    .card:hover { transform: translateY(-2px); border-color: rgba(76,201,240,0.5); box-shadow: 0 8px 30px rgba(0,0,0,0.25); }
-    .card h3 { margin: 0 0 8px; font-size: 18px; }
-    .card p { margin: 0; color: var(--muted); font-size: 14px; line-height:1.35; }
-    footer { text-align:center; padding: 24px; color: var(--muted); }
-    .pill { display:inline-block; font-size:12px; color:#0b0c10; background:var(--accent); border-radius:999px; padding:3px 10px; font-weight:600; margin-bottom:10px; }
+    :root {
+      --bg: #0b0c10;
+      --card: #15171c;
+      --text: #e8eef2;
+      --muted: #9aa4af;
+      --accent: #4cc9f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      padding: 40px 20px 10px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 6px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .pill {
+      display: inline-block;
+      font-size: 12px;
+      color: #0b0c10;
+      background: var(--accent);
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      padding: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      justify-content: center;
+      justify-items: center;
+    }
+
+    .card {
+      display: block;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 18px 18px 16px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+      backdrop-filter: blur(6px);
+      text-align: center;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(76,201,240,0.5);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.35;
+    }
+
+    .footer-links {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-family: 'new courier', Consolas, sans-serif;
+      font-size: 12px;
+      background: rgba(0, 0, 0, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer-links a {
+      color: #fff200;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -41,8 +178,8 @@
       <p>Get location of media files without exif data</p>
     </a>
   </main>
-  <footer>
-    <small>© Tirol Trailhead</small>
+  <footer class="footer-links">
+    <a href="/privacy_policy.html">Privacy</a> | <a href="/terms_of_use.html">Terms</a> | <a href="https://tiroltrailhead.com">© Tirol Trailhead</a>
   </footer>
 </body>
 </html>
