@@ -59,9 +59,12 @@
 
     body {
       margin: 0;
+      min-height: 100vh;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -89,6 +92,10 @@
       padding: 3px 10px;
       font-weight: 600;
       margin-bottom: 10px;
+    }
+
+    main {
+      flex: 1;
     }
 
     .grid {
@@ -178,7 +185,7 @@
       <p>Elba Island Trail Collection</p>
     </a>
     <a class="card" href="https://tiroltrailhead.com/webmaps/3D-Harterhof/">
-      <h3>3D Visualization of Trail Area</h3>
+      <h3>3D Trail Area</h3>
       <p>Three.js 3D Scene for Harterhof Trails</p>
     </a>
     <a class="card" href="https://tiroltrailhead.com/webmaps/trailspotting/">
