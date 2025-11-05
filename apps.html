@@ -6,7 +6,8 @@
   <meta name="description" content="Explore Tirol Trailhead's web applications including TheHunt25 treasure hunt game, OSM Trail Search, and NoEXIF Geotagging tools for outdoor enthusiasts." />
   <title>Apps · Tirol Trailhead</title>
   <link rel="canonical" href="https://tiroltrailhead.com/apps.html" />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon-apps.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -40,6 +41,23 @@
     "about": {
       "@type": "Organization",
       "name": "Tirol Trailhead"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tiroltrailhead.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Apps",
+          "item": "https://tiroltrailhead.com/apps.html"
+        }
+      ]
     }
   }
   </script>
@@ -187,6 +205,10 @@
     <a class="card" href="https://tiroltrailhead.com/noexif_geotagging">
       <h3>NoEXIF Geotagging</h3>
       <p>Get location of media files without exif data</p>
+    </a>
+    <a class="card" href="https://tiroltrailhead.com/glb-extractor/tools/extract_glb_models.html">
+      <h3>GLB Model Extractor</h3>
+      <p>Extract individual models from GLB collection files</p>
     </a>
   </main>
   <footer class="footer-links">

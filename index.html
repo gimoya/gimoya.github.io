@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tirol Trailhead - Professional MTB Guiding and Trail Planning Consulting Services in Tirol, Austria. Expert mountain bike guidance and trail consulting for outdoor & tourism industries.">
   <link rel="canonical" href="https://tiroltrailhead.com/" />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -46,14 +47,72 @@
       {
         "@type": "Service",
         "name": "MTB Guiding",
-        "description": "Professional mountain bike guidance services"
+        "description": "Professional mountain bike guidance services",
+        "url": "https://guiding.tiroltrailhead.com"
       },
       {
         "@type": "Service", 
         "name": "Trail Planning Consulting",
-        "description": "Expert trail consulting for outdoor & tourism industries"
+        "description": "Expert trail consulting for outdoor & tourism industries",
+        "url": "https://consulting.tiroltrailhead.com"
       }
-    ]
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Tirol Trailhead Services",
+      "itemListElement": [
+        {
+          "@type": "OfferCatalog",
+          "name": "Consulting and Guiding",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consulting",
+                "url": "https://consulting.tiroltrailhead.com"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Guiding",
+                "url": "https://guiding.tiroltrailhead.com"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Apps",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "WebPage",
+                "name": "Apps",
+                "url": "https://tiroltrailhead.com/apps.html"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Webmaps",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "WebPage",
+                "name": "Webmaps",
+                "url": "https://tiroltrailhead.com/webmaps.html"
+              }
+            }
+          ]
+        }
+      ]
+    }
   }
   </script>
   

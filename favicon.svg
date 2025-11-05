@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#90e0ef"/>
+  <!-- Simple mountain -->
+  <polygon points="16,8 6,24 26,24" fill="#0b0c10"/>
+  <circle cx="16" cy="20" r="2" fill="#90e0ef"/>
+</svg>
